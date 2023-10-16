@@ -1,9 +1,10 @@
 const mongoose = require('mongoose');
 
 const productoSchema = new mongoose.Schema({
+    _id: Object,
     nombre: String,
+    Cantidad: Number,
     precio: Number,
-    // Otros campos del modelo
 });
 
 const Producto = mongoose.model('Producto', productoSchema);

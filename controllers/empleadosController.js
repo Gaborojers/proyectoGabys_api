@@ -7,7 +7,7 @@ const empleadosController = {
            res.json(empleados);
        } catch (error) {
            res.status(500).json({ error: error.message });
-       }
+       } 
    },
 
    getById: async (req, res) => {

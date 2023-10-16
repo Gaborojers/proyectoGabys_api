@@ -1,9 +1,10 @@
 const mongoose = require('mongoose');
 
 const ventaSchema = new mongoose.Schema({
-   fecha: Date,
-   productos: [String], // Puede ser una referencia a productos o un array de nombres
-   // Otros campos del modelo de Venta
+   _id: Object,
+   productos_id: Object,
+   fechaVenta: Date,
+   totalVenta: Number,
 });
 
 const Venta = mongoose.model('Venta', ventaSchema);
